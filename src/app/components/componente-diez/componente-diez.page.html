@@ -1,0 +1,140 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button routerLink="/inicio"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Items</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="primero">
+    <ion-item>
+      <ion-label>Basic Item</ion-label>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label>
+        Multi-line text that should wrap when it is too long to fit on one line. Lorem ipsum dolor sit amet, consectetur
+        adipiscing elit.
+      </ion-label>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label class="ion-text-nowrap">
+        Multi-line text that should ellipsis when it is too long to fit on one line. Lorem ipsum dolor sit amet, consectetur
+        adipiscing elit.
+      </ion-label>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label>
+        <h1>H1 Heading</h1>
+        <p>Paragraph</p>
+      </ion-label>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label>
+        <h2>H2 Heading</h2>
+        <p>Paragraph</p>
+      </ion-label>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label>
+        <h3>H3 Heading</h3>
+        <p>Paragraph</p>
+      </ion-label>
+    </ion-item>
+  </div>
+  <hr color="danger">
+  <div class="segundo">
+    <ion-list [inset]="true">
+      
+      <ion-item [button]="true">
+        <ion-icon color="danger" slot="start" name="list-circle" size="large"></ion-icon>
+        <ion-label>General</ion-label>
+        <ion-note slot="end">6</ion-note>
+      </ion-item>
+
+      <ion-item [button]="true" detail="false">
+        <div class="unread-indicator-wrapper" slot="start">
+          <div class="unread-indicator"></div>
+        </div>
+        <ion-label>
+          <strong>Rick Astley</strong>
+          <ion-text>Never Gonna Give You Up</ion-text><br />
+          <ion-note color="medium" class="ion-text-wrap">
+            Never gonna give you up Never gonna let you down Never gonna run...
+          </ion-note>
+        </ion-label>
+        <div class="metadata-end-wrapper" slot="end">
+          <ion-note color="medium">06:11</ion-note>
+          <ion-icon color="medium" name="chevron-forward"></ion-icon>
+        </div>
+      </ion-item>
+      
+      <ion-item [button]="true" detail="false">
+        <div class="unread-indicator-wrapper" slot="start"></div>
+        <ion-label>
+          <strong>Ionic</strong>
+          <ion-text>Announcing Ionic 7.0</ion-text><br />
+          <ion-note color="medium" class="ion-text-wrap">This version is one more than Ionic 6!</ion-note>
+        </ion-label>
+        <div class="metadata-end-wrapper" slot="end">
+          <ion-note color="medium">Yesterday</ion-note>
+          <ion-icon color="medium" name="chevron-forward"></ion-icon>
+        </div>
+      </ion-item>
+    </ion-list>
+  </div>
+  <hr color="danger">
+  <div class="tercero">
+    <ion-list>
+      <ion-item>
+        <ion-icon aria-hidden="true" name="airplane" slot="start"></ion-icon>
+        <ion-label>Airplane Mode</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-icon aria-hidden="true" name="wifi" slot="start"></ion-icon>
+        <ion-label>Wi-Fi</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-icon aria-hidden="true" name="bluetooth" slot="start"></ion-icon>
+        <ion-label>Bluetooth</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-icon aria-hidden="true" name="call" slot="start"></ion-icon>
+        <ion-label>Cellular</ion-label>
+      </ion-item>
+    </ion-list>
+    
+    <ion-list>
+      <ion-item>
+        <ion-avatar aria-hidden="true" slot="start">
+          <img alt="" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+        </ion-avatar>
+        <ion-label>Huey</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-avatar aria-hidden="true" slot="start">
+          <img alt="" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+        </ion-avatar>
+        <ion-label>Dewey</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-avatar aria-hidden="true" slot="start">
+          <img alt="" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+        </ion-avatar>
+        <ion-label>Louie</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-avatar aria-hidden="true" slot="start">
+          <img alt="" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+        </ion-avatar>
+        <ion-label>Fooie</ion-label>
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>

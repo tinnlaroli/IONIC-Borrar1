@@ -1,0 +1,26 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button routerLink="/inicio"></ion-back-button>
+    </ion-buttons>
+    <ion-title>checkbox</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="primero">
+    <ion-checkbox labelPlacement="start">Label at the Start</ion-checkbox>
+    <br />
+    <ion-checkbox labelPlacement="end">Label at the End</ion-checkbox>
+    <br />
+    <ion-checkbox labelPlacement="fixed">Fixed Width Label</ion-checkbox>
+    <br />
+    <ion-checkbox labelPlacement="stacked">Stacked Label</ion-checkbox>
+  </div>
+  <div class="segundo">
+    <ion-checkbox class="ion-checkbox">Themed checkbox</ion-checkbox>
+  </div>
+  <div class="tercero">
+    <ion-checkbox [indeterminate]="true">Indeterminate checkbox</ion-checkbox>
+  </div>
+</ion-content>

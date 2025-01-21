@@ -1,0 +1,49 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button routerLink="/inicio"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Breadcrumbs</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="primeroBreadcrumb">
+    <ion-breadcrumbs>
+      <ion-breadcrumb href="#home">Home</ion-breadcrumb>
+      <ion-breadcrumb href="#electronics">Electronics</ion-breadcrumb>
+      <ion-breadcrumb href="#cameras">Cameras</ion-breadcrumb>
+      <ion-breadcrumb href="#film">Film</ion-breadcrumb>
+    </ion-breadcrumbs>
+  </div>
+  <div class="segundoBreadcrumb">
+    <ion-breadcrumbs>
+      <ion-breadcrumb href="#home">
+        Home
+        <ion-icon slot="separator" name="arrow-forward-circle"></ion-icon>
+      </ion-breadcrumb>
+      <ion-breadcrumb href="#electronics">
+        Electronics
+        <ion-icon slot="separator" name="arrow-forward-circle"></ion-icon>
+      </ion-breadcrumb>
+      <ion-breadcrumb href="#cameras">
+        Cameras
+        <ion-icon slot="separator" name="arrow-forward-circle"></ion-icon>
+      </ion-breadcrumb>
+      <ion-breadcrumb href="#film">
+        Film
+        <ion-icon slot="separator" name="arrow-forward-circle"></ion-icon>
+      </ion-breadcrumb>
+    </ion-breadcrumbs>
+  </div>
+  <div class="terceroBreadcrumb">
+    <ion-breadcrumbs [maxItems]="4" [itemsBeforeCollapse]="1">
+      <ion-breadcrumb href="#home">Home</ion-breadcrumb>
+      <ion-breadcrumb href="#electronics">Electronics</ion-breadcrumb>
+      <ion-breadcrumb href="#photography">Photography</ion-breadcrumb>
+      <ion-breadcrumb href="#cameras">Cameras</ion-breadcrumb>
+      <ion-breadcrumb href="#film">Film</ion-breadcrumb>
+      <ion-breadcrumb href="#35mm">35 mm</ion-breadcrumb>
+    </ion-breadcrumbs>
+  </div>
+</ion-content>

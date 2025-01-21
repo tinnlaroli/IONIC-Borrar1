@@ -1,0 +1,43 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button routerLink="/inicio"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Alert</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <!-- primero -->
+  <div class="primeroAlert">
+    <ion-button id="present-alert1">Click Me</ion-button>
+      <ion-alert
+        trigger="present-alert1"
+        header="A Short Title Is Best"
+        subHeader="A Sub Header Is Optional"
+        message="A message should be a short, complete sentence."
+        [buttons]="alertButtons1"
+      ></ion-alert>
+    
+  </div>
+  <!-- segundo -->
+  <div class="segundoAlert">
+    <ion-button id="present-alert2">Click Me</ion-button>
+      <ion-alert
+        trigger="present-alert2"
+        header="Please enter your info"
+        [buttons]="alertButtons2"
+        [inputs]="alertInputs2"
+      ></ion-alert>
+  </div>
+  <!-- tercero -->
+  <div class="terceroAlert">
+    <ion-button id="present-alert3">Click Me</ion-button>
+      <ion-alert
+        trigger="present-alert3"
+        header="Select your favorite color"
+        [buttons]="alertButtons3"
+        [inputs]="alertInputs3"
+      ></ion-alert>
+  </div>
+</ion-content>

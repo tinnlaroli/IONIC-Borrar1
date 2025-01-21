@@ -1,0 +1,69 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button routerLink="/inicio"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Inputs</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="primero">
+    <ion-list>
+      <ion-list>
+        <ion-item>
+          <ion-input label="Text input" placeholder="Enter text"></ion-input>
+        </ion-item>
+    
+        <ion-item>
+          <ion-input label="Number input" type="number" placeholder="000"></ion-input>
+        </ion-item>
+    
+        <ion-item>
+          <ion-input label="Password input" type="password" value="password"></ion-input>
+        </ion-item>
+    
+        <ion-item>
+          <ion-input label="Email input" type="email" placeholder="email@domain.com"></ion-input>
+        </ion-item>
+    
+        <ion-item>
+          <ion-input label="Telephone input" type="tel" placeholder="888-888-8888"></ion-input>
+        </ion-item>
+      </ion-list>
+    </ion-list>
+  </div>
+  <hr color="primary">
+  <div class="segundo">
+    <ion-list>
+      <ion-item>
+        <ion-input label="Default label" placeholder="Enter text"></ion-input>
+      </ion-item>
+    
+      <ion-item>
+        <ion-input label="Fixed label" labelPlacement="fixed" placeholder="Enter text"></ion-input>
+      </ion-item>
+    
+      <ion-item>
+        <ion-input label="Stacked label" labelPlacement="stacked" placeholder="Enter text"></ion-input>
+      </ion-item>
+    
+      <ion-item>
+        <ion-input label="Floating label" labelPlacement="floating" placeholder="Enter text"></ion-input>
+      </ion-item>
+    </ion-list>
+  </div>
+  <hr color="primary">
+  <div class="tercero">
+    <ion-input label="Default counter" labelPlacement="floating" [counter]="true" maxlength="20"></ion-input>
+
+    <ion-input
+      id="custom-input"
+      label="Custom Counter Format"
+      labelPlacement="floating"
+      [counter]="true"
+      maxlength="20"
+      [counterFormatter]="customCounterFormatter"
+    ></ion-input>
+  </div>
+</ion-content>
