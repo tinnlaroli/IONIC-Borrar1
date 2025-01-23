@@ -14,16 +14,17 @@
 
   <div class="form">
     <ion-item>
-      <ion-input type="email" placeholder="Email" label="Email">
+      <ion-input [(ngModel)] = "email" type="email"  label="Email">
       </ion-input>
     </ion-item> 
     
-    <ion-input type="password" placeholder="password" label="Password">
+    <ion-input [(ngModel)] = "password" type="password" label="Password">
       <ion-input-password-toggle></ion-input-password-toggle>
     </ion-input>
 
-    <ion-button type="submit" expand="block" routerLink="/inicio">Log in</ion-button>
+    <ion-button (click) = "login()" type="submit" expand="block">Log in</ion-button>
     <ion-button type="button" expand="block" fill="clear">Sign up</ion-button>
+
   </div>
 
 </ion-content>
