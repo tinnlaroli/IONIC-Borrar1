@@ -7,19 +7,19 @@
 <ion-content [fullscreen]="true">
 
   <form #nombreFrm = "ngForm" (ngSubmit) = "login(nombreFrm)">
-    <ion-item>
-      <ion-input name="emmanuel" [(ngModel)] = "email" type="email"  label="Email" required>
-      </ion-input>
-    </ion-item> 
     
+    <ion-input name="emmanuel" [(ngModel)] = "email" type="email"  label="Email" required>
+    </ion-input>
+  
     <ion-input name="pascuaro" [(ngModel)] = "password" type="password" label="Password" required>
-      <ion-input-password-toggle></ion-input-password-toggle>
     </ion-input>
 
     <ion-button type="submit" expand="block">Log in</ion-button>
+    
     <p>
       <ion-button  type="button" expand="block" fill="clear" routerLink = "/register" >No tienes cuenta ? Registrate</ion-button>
     </p>
+    
   </form>
 
 </ion-content>
