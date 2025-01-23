@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { NavController } from '@ionic/angular';
 
 @Component({
   standalone : false,
@@ -12,7 +13,9 @@ export class LoginPage implements OnInit {
   password : string = '';
   isLogged : boolean = false;
   
-  constructor() { 
+  constructor(
+    private navCtrlr : NavController
+  ) { 
     //this.email = ''; <- No es necesario, es una forma de inicializar la variable
     //this.password = ''; <- No es necesario, es una forma de inicializar la variable
   }
@@ -31,7 +34,7 @@ export class LoginPage implements OnInit {
 
     if(this.email === 'admin' && this.password === 'admin'){
       this.isLogged = true;
-      alert('Login correcto');
+      this.navCtrlr.navigateForward('/inicio');
     } else {
       this.isLogged = true;
       alert('Login incorrecto');
