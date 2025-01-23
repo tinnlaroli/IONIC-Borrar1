@@ -56,6 +56,10 @@ const routes: Routes = [
     path: 'componente-diez',
     loadChildren: () => import('./components/componente-diez/componente-diez.module').then( m => m.ComponenteDiezPageModule)
   },
+  {
+    path: 'register',
+    loadChildren: () => import('./register/register.module').then( m => m.RegisterPageModule)
+  },
   
 ];
 

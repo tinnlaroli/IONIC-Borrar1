@@ -11,11 +11,8 @@ import { NavController } from '@ionic/angular';
 export class LoginPage implements OnInit {
   email : string = '';
   password : string = '';
-  isLogged : boolean = false;
   
-  constructor(
-    private navCtrlr : NavController
-  ) { 
+  constructor( private navCtrlr : NavController ) { 
     //this.email = ''; <- No es necesario, es una forma de inicializar la variable
     //this.password = ''; <- No es necesario, es una forma de inicializar la variable
   }
@@ -33,10 +30,8 @@ export class LoginPage implements OnInit {
     }
 
     if(this.email === 'admin' && this.password === 'admin'){
-      this.isLogged = true;
       this.navCtrlr.navigateForward('/inicio');
     } else {
-      this.isLogged = true;
       alert('Login incorrecto');
     } 
   } 
